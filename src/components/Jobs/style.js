@@ -6,8 +6,8 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  h1 {
-    margin-bottom: 5rem;
+  p {
+    margin: 1rem 0 5rem 0;
   }
 `;
 export const CardsContainer = styled.div`

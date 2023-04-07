@@ -1,4 +1,7 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
+
+const scaleIn = keyframes`
+`;
 
 export const Container = styled.a`
   width: 450px;
@@ -16,6 +19,9 @@ export const Container = styled.a`
   background-size: cover;
   h1 {
     color: #fff;
+  }
+  :hover {
+    transform: scale(1.05);
   }
 `;
 

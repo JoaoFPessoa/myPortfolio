@@ -1,15 +1,18 @@
-import { Container } from "./styles";
+import { Container, ImageContainer } from "./styles";
 import avatar from "../../assets/icons/avatar.svg";
+import { useTranslation } from "react-i18next";
 
 export default function Banner() {
+  const { t } = useTranslation();
   return (
     <Container>
       <h1>
-        Frontend <br /> Developer.
-        <h2>Specialized in creating amazing and functional user interfaces.</h2>
+        {t("bannerTitle")}
+        <h2>{t("bannerSubtitle")}</h2>
       </h1>
-
-      <img src={avatar} alt="avatar" />
+      <ImageContainer>
+        <img src={avatar} alt="avatar" />
+      </ImageContainer>
     </Container>
   );
 }

@@ -1,15 +1,13 @@
 import { Container, Skills } from "./styles";
 import skills from "../../assets/icons/skills.svg";
+import { useTranslation } from "react-i18next";
+
 export default function Intro() {
+  const { t } = useTranslation();
   return (
     <Container>
-      <p>Hi, I'm João. Welcome to my website!</p>
-      <span>
-        In this portfolio, you will find some of the projects I've recently
-        developed, including landing pages, dashboards, and other web projects.
-        I hope you enjoy what you see and feel free to contact me if you need
-        help with your next project.
-      </span>
+      <p>{t("introTitle")}</p>
+      <span>{t("introSubtitle")}</span>
       <Skills>
         <img src={skills} alt="skills" />
         <h1>Skills</h1>

@@ -1,37 +1,54 @@
-import JobCard from "../JobCards";
+import LinkJobCards from "../LinkJobCards";
 import { CardsContainer, Container } from "./style";
 import prma from "../../assets/images/prma.png";
 import bws from "../../assets/images/bws.png";
 import bwssoft from "../../assets/images/bwssoft.png";
 import Modal from "../Modal";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export default function Jobs() {
+  const { t } = useTranslation();
+
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <Container>
-      <h1>My Recent Projects</h1>
+      <h1>{t("recentProjects")}</h1>
+      <p>{t("projectsWithContributors")}</p>
       <CardsContainer>
-        <JobCard
+        <LinkJobCards
           link="https://prmafederal.com/"
           title="PRMA Federal"
           image={prma}
         />
 
-        <JobCard
+        <LinkJobCards
           link="https://bws-institucional.web.app/"
-          title="BWS IoT"
+          title="BWS IoT *"
           image={bws}
+          contributor="https://github.com/giovanedann"
         />
-        <JobCard />
-        <JobCard onClick={() => setIsModalOpen(true)} />
-        <button onClick={() => setIsModalOpen(true)} />
+        {/* <ButtonJobCard
+          image={bwssoft}
+          title="Dashboard"
+          onClick={() => {
+            setIsModalOpen(true);
+          }}
+        />
+        <ButtonJobCard
+          image={bwssoft}
+          title="Dashboard"
+          onClick={() => {
+            setIsModalOpen(true);
+          }}
+        />
         <Modal
           image={bwssoft}
-          title="BWS Software"
+          title="Tracking company dashboard"
           subtitle="Its blurred because of customer privacy "
           visible={isModalOpen}
-        />
+          closeModal={() => setIsModalOpen(false)}
+        /> */}
       </CardsContainer>
     </Container>
   );
