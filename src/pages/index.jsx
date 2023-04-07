@@ -44,15 +44,14 @@ export default function MainPage({ getTheme, theme }) {
         <div>
           <img
             onClick={() => {
-              // changeLanguage("portuguese");
+              changeLanguage("portuguese");
             }}
             className="flag"
             src={brasilFlag}
           />
           <img
             onClick={() => {
-              console.log(language);
-              // changeLanguage("english");
+              changeLanguage("english");
             }}
             className="flag"
             src={usaFlag}
