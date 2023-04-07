@@ -1,9 +1,17 @@
 import ReactPortal from "../ReactPortal";
 import { Container, Overlay } from "./styles";
 import useAnimatedUnmount from "../../utils/useAnimatedUnmount";
+import { useRef } from "react";
+import useClickOutside from "../../utils/useOutsideClick";
 
-export default function Modal({ title, subtitle, image, visible }) {
+export default function Modal({ title, subtitle, image, closeModal, visible }) {
   const { shouldRender, animatedElementRef } = useAnimatedUnmount(visible);
+  const modalRef = useRef(null);
+
+  useClickOutside({
+    ref: modalRef,
+    onClickOutside: closeModal,
+  });
 
   if (!shouldRender) {
     return null;
@@ -18,7 +26,7 @@ export default function Modal({ title, subtitle, image, visible }) {
   return (
     <ReactPortal containerId="modal-root">
       <Overlay isClosing={!visible} ref={animatedElementRef}>
-        <Container isClosing={!visible}>
+        <Container isClosing={!visible} ref={modalRef}>
           <h1>{title}</h1>
           <p>{subtitle}</p>
           <img src={image} />
