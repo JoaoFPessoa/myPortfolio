@@ -86,6 +86,11 @@ export const Container = styled.div`
     width: 900px;
     height: 400px;
   }
+  @media (max-width: 768px) {
+    img {
+      width: 400px;
+      height: 300px;
+    }3  }
 `;
 
 export const Contributors = styled.div`
@@ -93,6 +98,16 @@ export const Contributors = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
+
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    flex-direction: column;
+
+    div {
+      margin-top: 2rem;
+      flex-wrap: wrap;
+    }
+  }
   h4 {
     margin-right: 8px;
     color: black;
