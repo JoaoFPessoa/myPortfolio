@@ -31,6 +31,17 @@ export const Container = styled.div`
     opacity: 0.8;
     width: 600px;
   }
+  @media (max-width: 768px) {
+    margin: 0;
+    h1 {
+      font-size: 24px;
+      width: 200px;
+    }
+    h2 {
+      font-size: 18px;
+      width: 200px;
+    }
+  }
 `;
 const slideFromRight = keyframes`
   from {
@@ -52,5 +63,14 @@ export const ImageContainer = styled.div`
     width: 300px;
     height: 300px;
     padding: 1rem;
+  }
+  @media (max-width: 768px) {
+    width: 150px;
+    height: 150px;
+    margin-right: 1rem;
+    img {
+      width: 150px;
+      height: 150px;
+    }
   }
 `;

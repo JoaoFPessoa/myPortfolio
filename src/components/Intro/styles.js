@@ -8,6 +8,7 @@ export const Container = styled.div`
   align-items: center;
   max-height: 800px;
   padding-top: 10rem;
+
   p {
     color: #f6f5fc;
     font-size: 24px;
@@ -18,6 +19,18 @@ export const Container = styled.div`
     margin-top: 2rem;
     max-width: 500px;
     text-align: center;
+  }
+  @media (max-width: 768px) {
+    margin-top: 2rem;
+    padding-top: 4rem;
+    p {
+      font-size: 16px;
+      font-weight: bold;
+    }
+    span {
+      max-width: 360px;
+      line-height: 150%;
+    }
   }
 `;
 
@@ -55,5 +68,9 @@ export const Skills = styled.div`
   }
   li {
     margin-top: 15px;
+  }
+  @media (max-width: 768px) {
+    width: 350px;
+    padding-bottom: 6rem;
   }
 `;

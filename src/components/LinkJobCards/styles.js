@@ -11,6 +11,7 @@ export const Container = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid orange;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(255, 255, 255, 0.5)
@@ -22,6 +23,11 @@ export const Container = styled.a`
   }
   :hover {
     transform: scale(1.05);
+  }
+  @media (max-width: 768px) {
+    h1 {
+      text-align: center;
+    }
   }
 `;
 
