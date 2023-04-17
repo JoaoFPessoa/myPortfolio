@@ -90,7 +90,8 @@ export const Container = styled.div`
     img {
       width: 400px;
       height: 300px;
-    }3  }
+    }
+  }
 `;
 
 export const Contributors = styled.div`

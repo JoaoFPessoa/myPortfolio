@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  background: rgb(110, 7, 243);
+  background: #060047;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,10 +60,11 @@ export const LocationContainer = styled.div`
   display: flex;
   width: 100%;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding: 0 10rem;
   @media (max-width: 768px) {
     padding: 0 1rem;
     flex-direction: column;
+    justify-content: center;
   }
 `;

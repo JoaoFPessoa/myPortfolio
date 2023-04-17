@@ -11,7 +11,6 @@ export const Container = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid orange;
   background-image: linear-gradient(
       rgba(0, 0, 0, 0.5),
       rgba(255, 255, 255, 0.5)

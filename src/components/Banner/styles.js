@@ -56,7 +56,7 @@ const slideFromRight = keyframes`
 export const ImageContainer = styled.div`
   width: 300px;
   height: 300px;
-  background: #6e07f3;
+  background: #ff6000;
   border-radius: 50%;
   animation: ${slideFromRight} 0.8s;
   img {
