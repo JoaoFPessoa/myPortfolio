@@ -72,9 +72,12 @@ export const Container = styled.div`
     `};
   > h1 {
     font-size: 22px;
+    color: black;
   }
   p {
     margin-bottom: 2rem;
+    color: black;
+    opacity: 0.6;
   }
   .modal-body {
     margin-top: 32px;
@@ -82,5 +85,33 @@ export const Container = styled.div`
   img {
     width: 900px;
     height: 400px;
+  }
+`;
+
+export const Contributors = styled.div`
+  margin: 1rem;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  h4 {
+    margin-right: 8px;
+    color: black;
+  }
+  div {
+    display: flex;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+      color: black;
+      font-size: 15px;
+      border: 1px solid black;
+      padding: 5px;
+      border-radius: 6px;
+      transition: all 0.4s;
+    }
+    a:hover {
+      background: gray;
+      color: white;
+    }
   }
 `;

@@ -6,8 +6,9 @@ export const portuguese = {
   introSubtitle:
     "Neste portfólio, você encontrará alguns dos projetos que desenvolvi recentemente, incluindo landing pages, dashboards e outros projetos web. Espero que goste do que vê e sinta-se à vontade para entrar em contato comigo se precisar de ajuda com seu próximo projeto.",
   recentProjects: "Projetos recentes",
-  projectsWithContributors:
-    "* projetos realizados com contribuidores (você pode checar o github deles ao passar o mouse em cima do projeto)",
+  projectsWithContributors: "* projetos realizados com contribuidores",
+  contributors: "Contribuidores",
+
   info: "Informações",
   location: "Localização",
   brasil: "Brasil",

@@ -18,6 +18,9 @@ export const Container = styled.button`
   h1 {
     color: #fff;
   }
+  :hover {
+    transform: scale(1.05);
+  }
 `;
 
 export const ButtonContainer = styled.button`
