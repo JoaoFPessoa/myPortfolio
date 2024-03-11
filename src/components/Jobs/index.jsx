@@ -5,6 +5,8 @@ import prmalogo from "../../assets/images/prmalogo.png";
 import bws from "../../assets/images/bws.png";
 import bwsdashboard from "../../assets/images/bwsdashboard.png";
 import bwssoft from "../../assets/images/bwssoft.png";
+import paktor from "../../assets/images/logo-verde-branco.png";
+import renans from "../../assets/images/renan-logo.jpg";
 import Modal from "../Modal";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -17,19 +19,22 @@ export default function Jobs() {
   return (
     <Container>
       <h1>{t("recentProjects")}</h1>
-      <p>{t("projectsWithContributors")}</p>
       <CardsContainer>
         <LinkJobCards
           link="https://prmafederal.com/"
           title="PRMA Federal"
           image={prmalogo}
         />
+        <LinkJobCards
+          link="https://paktor.vercel.app/"
+          title="Paktor"
+          image={paktor}
+        />
 
         <LinkJobCards
-          link="https://bws-institucional.web.app/"
-          title="BWS IoT *"
-          image={bws}
-          contributor="Realizado com: https://github.com/giovanedann"
+          link="https://lp-personal-trainer.vercel.app/"
+          title="Personal Trainer Renan"
+          image={renans}
         />
         <ButtonJobCard
           image={bwsdashboard}
