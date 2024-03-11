@@ -10,7 +10,7 @@ export default function Footer() {
   const { t } = useTranslation();
   return (
     <Container>
-      <h1>Information</h1>
+      <h1>{t("info")}</h1>
       <LocationContainer>
         <Location>
           <img src={pin} />

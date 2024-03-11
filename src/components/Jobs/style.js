@@ -17,4 +17,5 @@ export const CardsContainer = styled.div`
   gap: 1rem;
   margin: 0 10rem;
   width: 50%;
+  margin-top: 5rem;
 `;
