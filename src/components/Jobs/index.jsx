@@ -2,11 +2,11 @@ import LinkJobCards from "../LinkJobCards";
 import { CardsContainer, Container } from "./style";
 import prma from "../../assets/images/prma.png";
 import prmalogo from "../../assets/images/prmalogo.png";
-import bws from "../../assets/images/bws.png";
 import bwsdashboard from "../../assets/images/bwsdashboard.png";
-import bwssoft from "../../assets/images/bwssoft.png";
 import paktor from "../../assets/images/logo-verde-branco.png";
 import renans from "../../assets/images/renan-logo.jpg";
+import officeit from "../../assets/images/officeit.jpg";
+import dora from "../../assets/images/dora.jpg";
 import Modal from "../Modal";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -25,6 +25,11 @@ export default function Jobs() {
           title="PRMA Federal"
           image={prmalogo}
         />
+        <LinkJobCards 
+        link="https://www.officeit.com.br/"
+        title="OfficeIT"
+        image={officeit}
+        />
         <LinkJobCards
           link="https://paktor.vercel.app/"
           title="Paktor"
@@ -36,16 +41,23 @@ export default function Jobs() {
           title="Personal Trainer Renan"
           image={renans}
         />
+        <ButtonJobCard 
+        image={dora}
+        title="Media Dashboard"
+        onClick={() => {
+          setIsModalOpen("dora");
+        }}
+        />
         <ButtonJobCard
           image={bwsdashboard}
-          title="Dashboard 1 *"
+          title="Tracking Dashboard *"
           onClick={() => {
             setIsModalOpen("bws");
           }}
         />
         <ButtonJobCard
           image={prma}
-          title="Dashboard 2 *"
+          title="Patrolling Dashboard *"
           onClick={() => {
             setIsModalOpen("prma");
           }}
@@ -107,6 +119,13 @@ export default function Jobs() {
               </a>
             </div>
           }
+        />
+        <Modal
+          image={dora}
+          title="Media company dashboard"
+          subtitle="Its blurred because of customer privacy "
+          visible={isModalOpen === "dora"}
+          closeModal={() => setIsModalOpen("")}
         />
       </CardsContainer>
     </Container>
