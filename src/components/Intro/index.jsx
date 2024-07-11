@@ -13,10 +13,12 @@ export default function Intro() {
         <h1>Skills</h1>
         <ul>
           <li>Typescript</li>
-          <li>HTML</li>
-          <li>CSS</li>
           <li>React</li>
+          <li>Next.js</li>
           <li>React Native</li>
+          <li>Svelte.js</li>
+          <li>Astro.js</li>
+          <li>Tailwind</li>
           <li>Sass</li>
           <li>Styled Components</li>
           <li>Framer Motion</li>
