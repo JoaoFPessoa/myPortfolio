@@ -7,6 +7,7 @@ import paktor from "../../assets/images/logo-verde-branco.png";
 import renans from "../../assets/images/renan-logo.jpg";
 import officeit from "../../assets/images/officeit.jpg";
 import dora from "../../assets/images/dora.jpg";
+import doraLp from "../../assets/images/lp-dora.svg"
 import Modal from "../Modal";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -21,6 +22,11 @@ export default function Jobs() {
     <Container>
       <h1>{t("recentProjects")}</h1>
       <CardsContainer>
+      <LinkJobCards
+          link="https://dora-landing-page-sage.vercel.app/"
+          title="Dora LP"
+          image={doraLp}
+        />
         <LinkJobCards
           link="https://prmafederal.com/"
           title="PRMA Federal"
