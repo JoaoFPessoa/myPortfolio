@@ -6,7 +6,7 @@ import bwsdashboard from "../../assets/images/bwsdashboard.png";
 import paktor from "../../assets/images/logo-verde-branco.png";
 import renans from "../../assets/images/renan-logo.jpg";
 import officeit from "../../assets/images/officeit-logo.jpg";
-import dora from "../../assets/images/dora.jpg";
+import dora from "../../assets/images/dora-dashboard.jpg";
 import doraLp from "../../assets/images/lp-dora.svg"
 import Modal from "../Modal";
 import { useState } from "react";
